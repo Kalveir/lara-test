@@ -7,7 +7,7 @@ composer install && \
 php artisan blueprint:build && \
 
 # Remove existing vendor directory
-rm -rf /var/www/html/vendor && \
+rm -rf /app/vendor && \
 
 # Install production dependencies only
 composer install --no-dev --optimize-autoloader && \

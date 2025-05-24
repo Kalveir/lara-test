@@ -2,7 +2,7 @@
 set -e
 
 # Check if the application needs to be installed (using a flag file)
-if [ ! -f /var/www/html/.installed ]; then
+if [ ! -f /app/.installed ]; then
     echo "Running first-time installation..."
     touch /app/.installed
     sh /app/install.sh
