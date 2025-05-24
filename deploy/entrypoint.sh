@@ -20,7 +20,7 @@ fi
 export PATH=$PATH:/usr/local/frankenphp
 
 # Start Frankenphp
-exec frankenphp php-server --root /app/public --listen :8181
+exec frankenphp php-server --root /app/public --listen :80
 
 # Worker mode if needed
 #--worker /app/public/index.php,$(nproc)
