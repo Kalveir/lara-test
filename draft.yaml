@@ -1,0 +1,26 @@
+models:
+  Category :
+    id : id
+    name : string nullable
+  
+  Type :
+    id : id
+    name : string nullable
+  
+  Product :
+    id : uuid unique
+    category_id : foreign
+    type_id : foreign
+    name : string nullable
+    relationships :
+      belongsTo : Category,Type
+  
+  Chart_Shop:
+    id : uuid unique
+    product_id : uuid foreign
+    relationships :
+      belongsTo : Product
+
+
+
+
