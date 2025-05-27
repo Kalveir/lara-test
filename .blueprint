@@ -1,20 +1,2 @@
-created:
-    - database/factories/CategoryFactory.php
-    - database/factories/TypeFactory.php
-    - database/factories/ProductFactory.php
-    - database/factories/ChartShopFactory.php
-    - database/migrations/2025_05_27_053312_create_categories_table.php
-    - database/migrations/2025_05_27_053313_create_types_table.php
-    - database/migrations/2025_05_27_053314_create_products_table.php
-    - database/migrations/2025_05_27_053315_create_chart_shops_table.php
-    - app/Models/Category.php
-    - app/Models/Type.php
-    - app/Models/Product.php
-    - app/Models/ChartShop.php
 models:
-    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, remember_token: 'string:100 nullable' }
-    Category: { id: id, name: 'string nullable' }
-    Type: { id: id, name: 'string nullable' }
-    Product: { id: 'uuid unique', category_id: foreign, type_id: foreign, name: 'string nullable', relationships: { belongsTo: 'Category,Type' } }
-    Chart_Shop: { id: 'uuid unique', product_id: 'uuid foreign', relationships: { belongsTo: Product } }
-    ChartShop: { id: 'uuid unique', product_id: 'uuid foreign', relationships: { belongsTo: Product } }
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable default:NULL', password: string, remember_token: 'string:100 nullable default:NULL' }
