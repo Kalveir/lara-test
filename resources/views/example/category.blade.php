@@ -67,7 +67,7 @@
                                                     <label for="nama">Nama Category: </label>
                                                     <input type="text" name="name" value="{{ $ctg->name }}"
                                                         id="name" class="form-control" placeholder="Masukkan Nama Category"
-                                                        required>
+                                                        required autofocus>
 
                                                 </div>
                                         </div>
@@ -105,7 +105,7 @@
                         <div class="form-group">
                             <label for="nama">Nama Category</label>
                             <input type="text" name="name" id="name" class="form-control"
-                                placeholder="Masukkan Category" required>
+                                placeholder="Masukkan Category" required autofocus>
                         </div>
                 </div>
 

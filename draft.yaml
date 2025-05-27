@@ -15,7 +15,7 @@ models:
     relationships :
       belongsTo : Category,Type
   
-  Chart_Shop:
+  ChartShop:
     id : uuid unique
     product_id : uuid foreign
     relationships :

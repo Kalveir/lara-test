@@ -13,7 +13,7 @@ Add Product
     <div class="form-group">
       <label for="exampleFormControlInput1">Product Name : </label>
       <input type="text" class="form-control" id="exampleFormControlInput1" name="name"
-        placeholder="Product Name" required>
+        placeholder="Product Name" required autofocus>
     </div>
     <div class="form-group">
       <label for="sexampleFormControlInput1">Category :</label>
