@@ -16,6 +16,9 @@ if [ ! -f /app/.installed ]; then
     chmod +x /app/install.sh
 fi
 
+# Clear cache
+php artisan optimize:clear 
+
 # Create Path Frankenphp
 export PATH=$PATH:/usr/local/frankenphp
 
